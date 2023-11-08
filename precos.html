@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/avaliacoes.css">
+  <link rel="stylesheet" href="css/precos.css">
+  <script src="script/avaliacao.js"></script>
+  <script src="script/script.js"></script>
+  <title>GameBooster - Preços</title>
+</head>
+
+<body>
+    <!-- <div>
+    <div class="login-caixa">
+
+      <div class="login">
+        <div class="div-sair">
+          <div class="sair" onclick="toggleLogin()">X</div>
+        </div>
+
+        <div class="login-texto">
+          <h1>Efetuar Login</h1>
+
+          <p>Acesse sua conta GameBooster</p>
+        </div>
+
+        <div class="continuar-ops">
+          <div class="continuar">
+            <img src="imagens/google.png" alt="Logo do Google">
+            <p>Continuar com o Google</p>
+          </div>
+
+          <div class="continuar">
+            <img src="imagens/facebook.png" alt="Logo do Facebook.">
+            <p>Continuar com o Facebook</p>
+          </div>
+
+          <div class="continuar">
+            <img src="imagens/discord-icon.png" alt="Logo do Discord.">
+            <p>Continuar com o Discord</p>
+          </div>
+        </div>
+
+        <div class="centraliza-log">
+          <div class="div-ou">
+            <div></div>
+
+            <p>ou</p>
+
+            <div></div>
+          </div>
+        </div>
+
+        <div class="email-senha">
+
+          <form action="#" class="form">
+            <input type="email" name="email" id="email" placeholder="Digite seu e-mail ou login">
+
+            <input type="password" name="senha" id="senha" maxlength="14" placeholder="Digite sua senha">
+          </form>
+
+          <p class="esq-sen">Esqueceu a senha?</p>
+
+        </div>
+
+        <div class="confirmar">
+          <button>Confirmar</button>
+        </div>
+
+        <div class="confirmar">
+          <p class="nao-conta">Não possui uma conta? <a class="cadastre" href="#">Cadastre-se</a></p>
+        </div>
+
+      </div>
+    </div>
+  </div> -->
+
+  <!-- =============== MENU AUXILIAR (ACESSIBILIDADE) =============== -->
+  <div class="menu-auxiliar">
+    <a href="#principal" class="item-auxiliar">Ir para o conteúdo</a>
+    <a href="#rodape" class="item-auxiliar">Ir para o rodapé</a>
+  </div>
+  <!-- ============================================================== -->
+
+  <header>  
+    <div class="container-header">
+        <div class="logo-header">
+            <a class="logo-cv" href="index.html">
+                <img class="logo-cv" src="imagens/logo-cv.png" alt="Logo da Gamebooster">
+            </a>
+        </div>
+
+        <!-- ========== MENU DESKTOP (VERSÃO DO PROJETO FINAL) ========== -->
+        <nav class="nav-comp">
+            <ul class="itens-nav">    
+                <li class="container-servicos">
+                    <span class="servicos">Serviços</span>
+                    <ul class="caixa-servicos">
+                        <li><a href="#pxgBox" class="servico borda-f">PokeXGames</a></li>
+                        <li><a href="lol.html" class="servico borda-f">League of Legends</a></li>
+                        <li><a href="contas.html" class="servico borda-f">Contas</a></li>
+                        <li><a href="precos.html" class="servico men">Preços</a></li>
+                    </ul>
+                </li>
+                <li class="brilinho"><a href="avaliacoes.html">Avaliações</a></li>
+                <li class="brilinho"><a href="contato.html">Contato</a></li>
+                <li class="brilinho"><a href="faq.html">FAQ</a></li>
+                <!-- <li>
+                    <button id="botao-login" onclick="toggleLogin()">
+                        <img class="passar-c" src="imagens/avatar-brilho.svg" alt="Icone de login com brilho.">
+                        <img class="mostrada" src="imagens/avatar.svg" alt="Icone de login.">
+                        <span>Login</span>
+                    </button>
+                </li> -->
+            </ul>
+        </nav>
+        <!-- ============================================================= -->
+
+        <nav class="nav-cel">
+            <div class="menu-ham">
+            
+                <input id="caixa-invisivel" type="checkbox">       
+
+                <div class="fatias">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            
+                <ul class="menu">
+                    <li class="menu-ham-tipog">
+                        <a href="#"><img src="imagens/tipografia.png" alt="GameBooster escrito de forma estilizada."></a>
+
+                        <div class="menu-x">
+                            <input id="caixa-invisivel-2" type="checkbox" >
+
+                            <div class="x-ham">
+                                <span class="x1"></span>
+                                <span class="x2"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <input id="invisivel-servicos" type="checkbox">
+                    <li class="container-servicos-2">
+                        <span class="servicos-ham">Serviços</span>
+                        <ul class="caixa-servicos-2">
+                            <li class="servicosabcd" id="servico-a"><a href="#">PokeXGames</a></li>
+                            <li class="servicosabcd" id="servico-b"><a href="lol.html">League of Legends</a></li>
+                            <li class="servicosabcd" id="servico-c"><a href="#">Tibia</a></li>
+                            <li class="servicosabcd" id="servico-d">
+
+                                <input id="invisivel-contas" type="checkbox">
+
+                                <div class="container-contas-2">
+                                    <span class="livra-caixa"><a href="contas.html">Contas</a></span>
+                                    <!-- <ul class="caixa-contas-ham">
+                                        <li class="brilinho" id="conta-a"><a href="#">Anunciar (PxG)</a></li>
+                                        <li class="brilinho" id="conta-b"><a href="contas.html">Comprar (PxG)</a></li>
+                                    </ul> -->
+                                </div>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="margem"></li>
+                    <li class="margem2"></li>
+                    <li class="brilinho"><a href="precos.html">Preços</a></li>
+                    <li><a href="avaliacoes.html">Avaliações</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li class="menu-ham-log">
+                        <button id="botao-login-ham" onclick="toggleLogin()">LOGIN</button>
+                    </li>
+                    <li></li> <!-- Não apague isso -->
+                </ul>
+            </div>
+        </nav>
+    </div>
+  </header>
+
+  <main id="principal">
+    <div class="caixa-titulo-av">
+      <h1>CONFIRA AQUI NOSSOS SERVIÇOS E PREÇOS DETALHADOS</h1>
+
+      <p>Levando em conta a qualidade dos serviços prestados, garantimos os melhores preços que você encontrará no mercado. Confira agora e se surpreenda!</p>
+    </div>
+
+    <img class="img-pxg" src="imagens/team.webp" alt="">
+
+    <table>
+      <caption>Serviços e valores</caption>
+      <tr>
+        <th scope="col" class="top-left">Serviço</th>
+        <th scope="col">Preço</th>
+        <th scope="col">Responsável</th>
+        <th scope="col">Prazo</th>
+        <th scope="col">Requisitos</th>
+        <th scope="col" class="top-right">Descrição</th>
+      </tr><tr>
+        <th scope="row">Venda de moedas</th>
+        <td>R$ 2,00 (por unidade)</td>
+        <td>Lucas Amaral</td>
+        <td>até dois dias após confirmação de pagamento</td>
+        <td>Conta dentro do jogo</td>
+        <td>Cada unidade vendida possui 1000 moedas</td>
+      </tr><tr>
+        <th scope="row">Melhoria de level</th>
+        <td>R$ 15,00 (por level)</td>
+        <td>Danrley Regis</td>
+        <td>um dia por level requisitado após confirmação de pagamento</td>
+        <td>Conta dentro do jogo e equipamentos de caça</td>
+        <td>Aumento do level do personagem através de caçadas no jogo</td>
+      </tr><tr>
+        <th scope="row">Melhoria de ranking</th>
+        <td>R$ 10,00 (por divisão)</td>
+        <td>Gabriel Pimentel</td>
+        <td>seis horas para cada divisão requisitada após confirmação de pagamento</td>
+        <td>Conta dentro do jogo e, pelo menos, 20 campeões</td>
+        <td>Aumento do ranking da conta através de partidas ranqueadas</td>
+      </tr><tr>
+        <th scope="row" class="bottom-left">Venda de contas</th>
+        <td>Variável</td>
+        <td>Bianca Zatorre</td>
+        <td>até dois dias após confirmação de pagamento</td>
+        <td>Nenhum</td>
+        <td class="bottom-right">Venda de contas anunciadas por usuários em diversos jogos</td>
+      </tr>
+    </table>
+
+  </main>
+
+  <footer id="rodape">
+
+    <div class="footer-area">
+        <div class="caixa-footer">
+            <div class="declaracao">
+                <img class="tipografia-pb" src="imagens/tipografia-PeB.png" alt="GameBooster escrito de forma estilizada.">
+                <p>A GameBooster© declara que não possui vínculo algum com as empresas responsáveis pelos jogos citados nesta página.</p>
+            </div>
+
+            <nav class="opcoes-footer">
+
+                <ul class="coluna-footer">
+                    <li>LEGAL</li>
+                    <li><a class="brilinho" href="#">Termos de Uso</a></li>
+                    <li><a class="brilinho" href="#">Política de Privacidade</a></li>
+                </ul>
+
+                <ul class="coluna-footer">
+                    <li>SUPORTE</li>
+                    <li><a class="brilinho" href="#">WhatsApp</a></li>
+                    <li><a class="brilinho" href="#">Chat Online</a></li>
+                    <li><a class="brilinho" href="#">E-mail</a></li>
+                </ul>
+                
+                <ul class="coluna-footer">
+                    <li>JOGOS</li>
+                    <li><a class="brilinho" href="#">PokeXGames - PxG</a></li>
+                    <li><a class="brilinho" href="lol.html">League of Legends</a></li>
+                    <li><a class="brilinho" href="#">Tibia</a></li>
+                </ul>
+
+            </nav>
+        </div>
+
+        <div class="footer-final">
+            <p>© 2023 GameBooster Inc. Todos os direitos reservados.</p>
+            <div class="flex-logos-footer">
+                <a href="https://www.facebook.com/"><img class="logos-footer" src="imagens/facebook-logo-b.png" alt="Logo do Facebook."></a>
+                <a href="https://www.instagram.com/"><img class="logos-footer" src="imagens/instagram-logo-b.png" alt="Logo do Instagram."></a>
+                <a href="https://discord.com/"><img class="logos-footer" src="imagens/discord-logo-b.png" alt="Logo do Discord."></a>
+            </div>
+        </div>
+    </div>
+  </footer> 
+  
+</body>
+
+</html>
