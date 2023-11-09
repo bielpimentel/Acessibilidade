@@ -74,15 +74,21 @@ h1 {
 
 .menu-auxiliar {
     display: flex;
-    justify-content: space-between;
     background-color: #000000;
-    width: auto;
     padding: 5px 5px 10px 5px;
-    margin: 0 40px;
     border-bottom: 1px solid #3a3a3a;
+    justify-content: center;
 }
 
-.menu-auxiliar a {
+.box-aux {
+    flex: 1;
+    display: flex;
+    max-width: 1260px;
+    justify-content: space-between;
+    margin: 0 40px;
+}
+
+.box-aux a {
     font-weight: lighter;
     text-decoration: underline;
 }

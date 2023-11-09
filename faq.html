@@ -77,8 +77,10 @@
 
     <!-- =============== MENU AUXILIAR (ACESSIBILIDADE) =============== -->
     <div class="menu-auxiliar">
-        <a href="#principal" class="item-auxiliar">Ir para o conteúdo</a>
-        <a href="#rodape" class="item-auxiliar">Ir para o rodapé</a>
+        <div class="box-aux">
+            <a href="#principal" class="item-auxiliar">Ir para o conteúdo</a>
+            <a href="#rodape" class="item-auxiliar">Ir para o rodapé</a>
+        </div>
     </div>
     <!-- ============================================================== -->
 
@@ -185,12 +187,11 @@
             <p>Nossa seção de perguntas frequentes é constantemente atualizada e preparada para te ajudar, mas se a dúvida persistir, lembre-se que possuímos diversas formas de contato, ok?!</p>
         
             <form class="pesquisa-container">
-                <label for="busca" class="lupa">
+                <div for="busca" class="lupa">
                     <img src="imagens/search-icon.png" alt="Um Ícone de uma Lupa.">
-                </label>
-                <input class="area-busca" id="busca" type="search" placeholder="Digite aqui um tópico ou termo específico">
-                <input class="botao-busca" type="submit" value="BUSCAR">
-                    
+                </div>
+                <input class="area-busca" id="busca" type="search" title="Busca nos tópicos" placeholder="Digite aqui um tópico ou termo específico">
+                <input class="botao-busca" type="submit" value="BUSCAR">   
             </form>
         </div>
 
@@ -261,7 +262,7 @@
                         <input type="checkbox" name="faq" id="pagamento4" class="noFlip" onclick="plusFlip(event)">
                         <label for="pagamento4">Solicitei o serviço errado. Posso pedir estorno?<img class="plus" src="imagens/plus.png" alt="Ícone circular com símbolo de adição"></label>
                         <div class="content">
-                            <p>A PREENCHER.</p>
+                            <p>O estorno pode ser pedido em qualquer situação, desde que o serviço solicitado não tenha sido iniciado e/ou o recurso adquirido não tenha sido enviado.</p>
                         </div>
                     </li>
 
@@ -269,7 +270,7 @@
                         <input type="checkbox" name="faq" id="pagamento5" class="noFlip" onclick="plusFlip(event)">
                         <label for="pagamento5">Como saber se meu pagamento foi aprovado?<img class="plus" src="imagens/plus.png" alt="Ícone circular com símbolo de adição"></label>
                         <div class="content">
-                            <p>A PREENCHER.</p>
+                            <p>Enviamos um e-mail tão logo o pagamento seja reconhecido pelo nosso sistema. Caso o mesmo tenha sido feito através de cartão de crédito, é necessário entrar em contato com a operadora do cartão.</p>
                         </div>
                     </li>
                 </ul>
@@ -290,6 +291,14 @@
                             <p>Cada service possui requisitos específicos que estarão listados na própria página de services disponíveis.</p>
                         </div>
                     </li>
+
+                    <li class="caixa-info-cima">
+                        <input type="checkbox" name="faq" id="requisitos3" class="noFlip" onclick="plusFlip(event)">
+                        <label for="requisitos3">Quero comprar uma conta. O que preciso para tal?<img class="plus" src="imagens/plus.png" alt="Ícone circular com símbolo de adição"></label>
+                        <div class="content">
+                            <p>Não há nenhum requisito específico para realizar a compra de conta, bastando apenas a efetivação do pagamento. Contudo, sugerimos não comprar contas com level muito elevado caso seja um jogador inexperiente.</p>
+                        </div>
+                    </li>
                 </ul>
 
                 <ul class="accordion" id="faq-prazos">
@@ -297,7 +306,7 @@
                         <input type="checkbox" name="faq" id="prazos1" onclick="plusFlip(event)">
                         <label for="prazos1">Em quanto tempo o serviço é finalizado?<img class="plus" src="imagens/plus.png" alt="Ícone circular com símbolo de adição"></label>
                         <div class="content">
-                            <p>A PREENCHER.</p>
+                            <p>Quão logo o pagamento seja aprovado, iniciaremos o serviço no mesmo dia. No entanto, cada serviço/produto possui um prazo máximo específico. Consulte nossa tabela na seção de "Preços".</p>
                         </div>
                     </li>
 
@@ -305,7 +314,7 @@
                         <input type="checkbox" name="faq" id="prazos2" class="noFlip" onclick="plusFlip(event)">
                         <label for="prazos2">Em quanto tempo terei acesso à conta comprada?<img class="plus" src="imagens/plus.png" alt="Ícone circular com símbolo de adição"></label>
                         <div class="content">
-                            <p>A PREENCHER.</p>
+                            <p>Sendo o pagamento aprovado, entramos em contato imediato com o anunciante da conta. Pedimos um prazo máximo de 3 dias nessa etapa. Caso não obtenhamos resposta do mesmo, devolvemos o dinheiro.</p>
                         </div>
                     </li>
                     
@@ -313,7 +322,76 @@
                         <input type="checkbox" name="faq" id="prazos3" class="noFlip" onclick="plusFlip(event)">
                         <label for="prazos3">Qual o prazo de entrega de KKs?<img class="plus" src="imagens/plus.png" alt="Ícone circular com símbolo de adição"></label>
                         <div class="content">
-                            <p>A PREENCHER.</p>
+                            <p>A depender da disponibilidade do recurso no servidor, os prazos para envio dos KK's é de 2 dias a contar da aprovação de pagamento.</p>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="accordion" id="faq-seguranca">
+                    <li class="caixa-info-cima">
+                        <input type="checkbox" name="faq" id="seguranca1" onclick="plusFlip(event)">
+                        <label for="seguranca1">Em quanto tempo o serviço é finalizado?<img class="plus" src="imagens/plus.png" alt="Ícone circular com símbolo de adição"></label>
+                        <div class="content">
+                            <p>Quão logo o pagamento seja aprovado, iniciaremos o serviço no mesmo dia. No entanto, cada serviço/produto possui um prazo máximo específico. Consulte nossa tabela na seção de "Preços".</p>
+                        </div>
+                    </li>
+
+                    <li class="caixa-info-cima">
+                        <input type="checkbox" name="faq" id="seguranca2" class="noFlip" onclick="plusFlip(event)">
+                        <label for="seguranca2">Em quanto tempo terei acesso à conta comprada?<img class="plus" src="imagens/plus.png" alt="Ícone circular com símbolo de adição"></label>
+                        <div class="content">
+                            <p>Sendo o pagamento aprovado, entramos em contato imediato com o anunciante da conta. Pedimos um prazo máximo de 3 dias nessa etapa. Caso não obtenhamos resposta do mesmo, devolvemos o dinheiro.</p>
+                        </div>
+                    </li>
+                    
+                    <li class="caixa-info-cima">
+                        <input type="checkbox" name="faq" id="seguranca3" class="noFlip" onclick="plusFlip(event)">
+                        <label for="seguranca3">Qual o prazo de entrega de KKs?<img class="plus" src="imagens/plus.png" alt="Ícone circular com símbolo de adição"></label>
+                        <div class="content">
+                            <p>A depender da disponibilidade do recurso no servidor, os prazos para envio dos KK's é de 2 dias a contar da aprovação de pagamento.</p>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="accordion" id="faq-privacidade">
+                    
+                    <li class="caixa-info-cima">
+                        <input type="checkbox" name="faq" id="privacidade1" onclick="plusFlip(event)">
+                        <label for="privacidade1">Quais são as formas de pagamento aceitas?<img class="plus" src="imagens/plus.png" alt="Ícone circular com símbolo de adição"></label>
+                        <div class="content">
+                            <p>Atualmente, trabalhamos com Pix, PicPay ou PayPal, com possibilidade de expansão futura.</p>
+                        </div>
+                    </li>
+
+                    <li class="caixa-info-cima">
+                        <input type="checkbox" name="faq" id="privacidade2" class="noFlip" onclick="plusFlip(event)">
+                        <label for="privacidade2">Posso fazer pagamento via transferência?<img class="plus" src="imagens/plus.png" alt="Ícone circular com símbolo de adição"></label>
+                        <div class="content">
+                            <p>Atualmente não trabalhamos com transferências via DOC/TED, porém existe a opção de transferência via Pix.</p>
+                        </div>
+                    </li>
+
+                    <li class="caixa-info-cima">
+                        <input type="checkbox" name="faq" id="privacidade3" class="noFlip" onclick="plusFlip(event)">
+                        <label for="privacidade3">Posso pagar depois do serviço realizado?<img class="plus" src="imagens/plus.png" alt="Ícone circular com símbolo de adição"></label>
+                        <div class="content">
+                            <p>Os serviços apenas serão realizados após o processamento do pagamento, desta forma, não trabalhamos com transações financeiras posteriores, inclusive para vendas de KK's e contas.</p>
+                        </div>
+                    </li>
+
+                    <li class="caixa-info-cima">
+                        <input type="checkbox" name="faq" id="privacidade4" class="noFlip" onclick="plusFlip(event)">
+                        <label for="privacidade4">Solicitei o serviço errado. Posso pedir estorno?<img class="plus" src="imagens/plus.png" alt="Ícone circular com símbolo de adição"></label>
+                        <div class="content">
+                            <p>O estorno pode ser pedido em qualquer situação, desde que o serviço solicitado não tenha sido iniciado e/ou o recurso adquirido não tenha sido enviado.</p>
+                        </div>
+                    </li>
+
+                    <li class="caixa-info-cima">
+                        <input type="checkbox" name="faq" id="privacidade5" class="noFlip" onclick="plusFlip(event)">
+                        <label for="privacidade5">Como saber se meu pagamento foi aprovado?<img class="plus" src="imagens/plus.png" alt="Ícone circular com símbolo de adição"></label>
+                        <div class="content">
+                            <p>Enviamos um e-mail tão logo o pagamento seja reconhecido pelo nosso sistema. Caso o mesmo tenha sido feito através de cartão de crédito, é necessário entrar em contato com a operadora do cartão.</p>
                         </div>
                     </li>
                 </ul>

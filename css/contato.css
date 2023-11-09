@@ -16,9 +16,9 @@
 
 .conta-teste {
   display: flex;
-  flex-basis: 100%;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   justify-content: center;
+  align-items: center;
   margin: -50px 30px;
 }
 
