@@ -105,7 +105,7 @@
 
 .aplicar {
   border-radius: 60px;
-  background: #FF2400;
+  background: #AD1700;
   width: 264px;
   height: 51px;
   border: none;
@@ -281,7 +281,7 @@
   font-size: 20px;
   font-style: italic;
   font-weight: 700;
-  color: #666;
+  color: #FFF;
 }
 
 .preco-item {
@@ -301,7 +301,7 @@
 
 .botao-comprar {
   border-radius: 60px;
-  background: #FF2400;
+  background: #AD1700;
   width: 192px;
   height: 51px;
   align-self:self-end;
@@ -316,5 +316,5 @@
 
 .aplicar:hover,
 .botao-comprar:hover {
-  background-color: #B81A00;
+  background-color: #AD1700;
 }
